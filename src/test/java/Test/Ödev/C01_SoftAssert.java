@@ -37,6 +37,5 @@ public class C01_SoftAssert {
         softAssert.assertTrue(logo.isDisplayed(),"Logo görünmedi");
 
 
-
     }
 }

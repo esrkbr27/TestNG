@@ -18,7 +18,7 @@ public abstract class TestBaseBeforeClassAfterClass {
   protected  String tarih;
 
   //@BeforeClass ve @AfterClass notasyonlaronı TestNG de kullanırken static yapmaya geek yoktur.
-    @BeforeClass
+    @BeforeClass (groups = "gp1")
     public  void setUp(){
       WebDriverManager.chromedriver().setup();
       driver=new ChromeDriver();
@@ -30,7 +30,7 @@ public abstract class TestBaseBeforeClassAfterClass {
       tarih=date.format(formatter);
     }
 
-    @AfterClass
+    @AfterClass (groups = "gp1" )
     public  void tearDown() throws InterruptedException {
         //driver.quit();
     }

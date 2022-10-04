@@ -24,5 +24,22 @@ public class hmcPage {
     @FindBy(xpath = "//*[@id='divMessageResult']")
     public WebElement girisYapılamadı;
 
+    @FindBy(xpath = "//*[text()='Hotel Management']")
+    public WebElement hotelmanagament;
+
+    @FindBy(xpath = "(//*[@class='icon-calendar'])[4]")
+    public WebElement roomReservation;
+
+    @FindBy (xpath = "//*[text()='Add Room Reservation '] ")
+    public WebElement addRoomReservation;
+
+    @FindBy(xpath = "//*[@id='IDUser']")
+    public WebElement idUser;
+
+    @FindBy (xpath = "(//*[@class='modal-body'])[1]")
+    public WebElement basariligirisyapildi;
+
+    @FindBy (xpath = "//*[@class='btn btn-primary']")
+    public WebElement okbutton;
 
 }

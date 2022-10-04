@@ -1,4 +1,4 @@
-package Test.day18;
+package Test.day20SmokeTest;
 
 import Pages.hmcPage;
 import Utilities.ConfigReader;
@@ -14,29 +14,11 @@ import org.testng.annotations.Test;
 import java.io.File;
 import java.io.IOException;
 
-public class C03_ConfigReader {
-    /*
-       Bir Class olustur : PositiveTest
-        2) Bir test method olustur positiveLoginTest()  https://www.hotelmycamp.com/ adresine git
-         login butonuna bas
-        test data username: manager ,  test data password : Manager1!
-                Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
-     */
+public class C01_SmokePozitifTest {
 
-
-    @Test (groups = "gp2")
-    public void test01() throws IOException {
+    @Test
+    public void pozitifTest() throws IOException {
         Driver.getDriver().get(ConfigReader.getProperty("hmcUrl"));
-        /*
-        Page classındakı locatelerimize ulaşabilmek için Page
-        classımızdan bir obje oluşturarak oluşturmuş olduğumuz obje ile
-        page classımızdakı locatelerimize ulaşabilriz.
-
-       Test Dataları configuration.properties fileında,
-       locatelerım ise Page packagenın altında yer alır.
-       Classımda datalara ulaşmak için ConfigReader.getProperty("..") metodunu kullanarak dataları alıyorum
-       Page packageındakı classımdan obje üreterek de locatelere ulaşıyorum
-         */
         hmcPage hmcPage=new hmcPage();
         hmcPage.login.click();
         hmcPage.username.sendKeys(ConfigReader.getProperty("userName"));
@@ -45,17 +27,14 @@ public class C03_ConfigReader {
                 sendKeys(ConfigReader.getProperty("password")).
                 sendKeys(Keys.ENTER).perform();
 
-      //  Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
+        //  Degerleri girildiginde sayfaya basarili sekilde girilebildigini test et
         Assert.assertTrue(hmcPage.loginkontrol.isDisplayed());
 
-        //Sayfanın fotoğrafını alaım
+        //Fotoğrafını alaım
 
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
         File tumSayfaResmi= ts.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(tumSayfaResmi, new File("target/ekranGoruntusu/AllPage.jpeg"));
         Driver.closeDriver();
-
-
-
     }
 }

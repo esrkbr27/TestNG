@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="istenen metodlar">
+    <test name="metod">
+        <classes>
+            <class name="Test.day16.C03_Priority">
+                <methods>
+                    <include name="youtubeTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

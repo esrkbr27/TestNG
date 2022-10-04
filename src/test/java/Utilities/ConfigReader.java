@@ -7,6 +7,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
+    //Javadakı Properties classından obje ürettik asagıda (objenın esitlikten öncekı kısmını)deger burda atamadık
     public static Properties properties;
 
           static { //her metottan önce calışır
@@ -14,9 +15,12 @@ public class ConfigReader {
               String dosyayolu="configuration.properties";
               try {
                   FileInputStream fis=new FileInputStream(dosyayolu);
+                  //objenin esitlikten sonrakı kısmını buraya yazdık
                   properties = new Properties();
-                  properties.load(fis);
+
                   //fisin okudugu bilgileri propertiese yukledi.
+                  properties.load(fis);
+
 
               }  catch (IOException e) {
                   throw new RuntimeException(e);
@@ -27,7 +31,7 @@ public class ConfigReader {
 
     public static String getProperty(String key) {
         /*
-        Test metodundan yolladıgımı9z key degerini alıp properties
+        Test metodundan yolladıgımız key degerini alıp properties
         classından getProperty(String key) metodunu kullanarak bu keye
         ait valueyu bize getirir.
          */
