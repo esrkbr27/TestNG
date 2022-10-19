@@ -1,0 +1,3 @@
+2022-10-15 22:53:44,390 INFO T.l.Log4JTest2 [main] hepsiburada sitesine gidilir
+2022-10-15 22:53:57,345 INFO T.l.Log4JTest2 [main] ekranGoruntusu alıyoruz
+2022-10-15 22:53:57,790 WARN T.l.Log4JTest2 [main] driver kapatılır

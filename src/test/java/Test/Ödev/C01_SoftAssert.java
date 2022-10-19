@@ -1,12 +1,10 @@
 package Test.Ödev;
 
 import Pages.YoutubePage;
-import Utilities.Driver;
+import utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import static Utilities.Driver.getDriver;
 
 public class C01_SoftAssert {
     /*

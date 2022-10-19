@@ -13,7 +13,16 @@ day18 packageda C03 classında "gp2" yaptım
 İnclude: seçilip package içindeki seçili metotları çalıştırıyor
 Exclude: seçili package içindeki seçili metot haricindekileri çalıştırıyor
 
+< TEST GRUPLARI OLUŞURMA
+        @Test notasyonunun içine;
+       Örnek 1: @Test ===> groups="grup1"
+       Örnek 2: @Test ===> groups={"grup1","grup2"}
+       şeklinde o methodun hangi gruba ait olduğu yazılır.
+       Örnek 2'de ki Test methodu; hem grup1'e hemde grup2'ye dahil edilmiştir.
 -->
+
+
+
 
 
 

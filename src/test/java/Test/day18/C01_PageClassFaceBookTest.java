@@ -1,12 +1,10 @@
 package Test.day18;
 
 import Pages.FaceBookPage;
-import Utilities.Driver;
+import utilities.Driver;
 import com.github.javafaker.Faker;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.Random;
 
 public class C01_PageClassFaceBookTest {
     /*

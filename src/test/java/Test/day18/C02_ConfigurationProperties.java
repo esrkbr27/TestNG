@@ -1,7 +1,7 @@
 package Test.day18;
 
-import Utilities.ConfigReader;
-import Utilities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.testng.annotations.Test;
 
 public class C02_ConfigurationProperties {

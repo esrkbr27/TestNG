@@ -7,3 +7,8 @@
         </packages>
     </test>
 </suite>
+
+<!--
+paralel test yapmak için parallel tagı kullanılır, kac tane browser calıştırmak istiyorsanız
+therad count tagı kullanılır.
+-->

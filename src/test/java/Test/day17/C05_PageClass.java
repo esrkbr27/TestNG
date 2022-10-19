@@ -1,7 +1,7 @@
 package Test.day17;
 
 import Pages.AmazonPage;
-import Utilities.Driver;
+import utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 

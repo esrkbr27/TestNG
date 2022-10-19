@@ -1,14 +1,13 @@
 package Test.Practice07;
 
 import Pages.webUniverstyPage;
-import Utilities.Driver;
+import utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.swing.text.LayoutQueue;
 import java.util.ArrayList;
 import java.util.List;
 

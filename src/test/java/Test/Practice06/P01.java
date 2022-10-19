@@ -1,7 +1,7 @@
 package Test.Practice06;
 
 import Pages.DhtmlgoodiesPage;
-import Utilities.Driver;
+import utilities.Driver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 

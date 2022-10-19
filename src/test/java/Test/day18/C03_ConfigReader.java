@@ -1,8 +1,8 @@
 package Test.day18;
 
 import Pages.hmcPage;
-import Utilities.ConfigReader;
-import Utilities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;

@@ -1,7 +1,7 @@
 package Test.day21;
 
-import Utilities.Driver;
-import Utilities.ReusableMethods;
+import utilities.Driver;
+import utilities.ReusableMethods;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;

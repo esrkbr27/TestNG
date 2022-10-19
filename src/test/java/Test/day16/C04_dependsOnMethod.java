@@ -1,7 +1,6 @@
 package Test.day16;
 
-import Utilities.TestBaseBeforeClassAfterClass;
-import Utilities.TestBaseBeforeMethodAfterMethod;
+import utilities.TestBaseBeforeClassAfterClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

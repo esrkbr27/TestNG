@@ -1,13 +1,10 @@
 package Test.day20SmokeTest;
 
 import Pages.hmcPage;
-import Utilities.ConfigReader;
-import Utilities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import com.github.javafaker.Faker;
-import org.bouncycastle.crypto.signers.HMacDSAKCalculator;
-import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;

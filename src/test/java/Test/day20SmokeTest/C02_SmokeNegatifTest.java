@@ -1,8 +1,8 @@
 package Test.day20SmokeTest;
 
 import Pages.hmcPage;
-import Utilities.ConfigReader;
-import Utilities.Driver;
+import utilities.ConfigReader;
+import utilities.Driver;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
